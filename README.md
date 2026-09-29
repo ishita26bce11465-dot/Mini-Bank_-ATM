@@ -1,1 +1,63 @@
-# Mini-Bank_-ATM
+# Project: Mini Bank ATM
+
+A simple, beginner-friendly Python project that simulates basic ATM (Automated Teller Machine) operations.
+This project uses multiple Python files, simple functions, and in-memory dictionary storage, making it easy to understand and perfect for college mini-project submission.
+
+## Features
+
+* **Create New Account:** Users can create an account with account number, name, and PIN.
+* **Secure Login:** Login using account number + 4-digit PIN.
+* **Check Balance:** Displays the current account balance.
+* **Deposit Money:** Add money to the account and record the transaction.
+* **Withdraw Money:** Withdraw money if sufficient balance is available.
+* **Mini Statement:** Shows the list of recent transactions.
+* **Change PIN:** Users can update their existing PIN.
+* **Logout:** Return to the main menu.
+
+> **Note:** No external database or file storage is used. Everything is stored temporarily in a Python dictionary while the program is running.
+
+## How It Works
+
+1. User starts the program with `main.py`.
+2. Main menu appears:
+   * Create Account
+   * Login
+   * Exit
+3. After login, the ATM menu appears:
+   * Check Balance
+   * Deposit
+   * Withdraw
+   * Mini Statement
+   * Change PIN
+   * Logout
+4. All banking operations update the in-memory accounts dictionary.
+
+## Modules Overview
+
+### `main.py`
+* Displays the welcome screen
+* Controls the main flow
+* Calls login or account creation
+* Sends the logged-in user to the ATM menu
+
+### `bank.py`
+* Handles account creation
+* Handles login authentication
+
+### `account.py`
+* Stores all accounts in a dictionary
+* Contains balance and PIN functions
+
+### `transaction.py`
+* Handles deposit, withdrawal, and history tracking
+
+### `atm_menu.py`
+* Displays options after login
+* Calls functions from other modules
+
+## Technologies Used
+* **Python 3**
+* Basic functions
+* Dictionaries
+* Modular programming
+*(No external libraries required)*
